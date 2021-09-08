@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;1,200;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,400;1,200;1,400&family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+html,
+body {
+  background: #181719;
+}
+.nav {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.nav h1 {
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  font-family: Crimson Pro;
+  font-style: normal;
+  font-weight: 200;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 20px;
+  margin-left: 2em;
+}
+.nav-buttons {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  margin-right: 2em;
+}
+.nav-buttons a {
+  color: #ffffff;
+  margin: 30px;
+  text-decoration: none;
+  border-bottom: 2px solid white;
+  padding-bottom: 10px;
+}
+.main-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5em;
+}
+.description {
+  width: 31em;
+}
+.description h2 {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 61px;
+
+  color: #ffffff;
+}
+.description p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+.description a {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  text-decoration: none;
+  color: #ffffff;
+}
+.cards img {
+  height: 500px;
+}
+.designer-card {
+  display: flex;
+  align-items: center;
+  width: 350px;
+  height: 190px;
+  background-color: #181719;
+  position: absolute;
+  margin-left: 15em;
+  margin-top: -4em;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.designer-card img {
+  border-radius: 50%;
+  height: 64px;
+  margin-top: -5em;
+  margin-left: 2em;
+}
+.designer-desc {
+  margin-top: -6em;
+  margin-left: 1em;
+  color: #ffffff;
+  line-height: 1px;
+}
+.designer-sign {
+  font-family: Lora;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 31px;
+  color: #ffffff;
+  position: absolute;
+  margin-top: 3em;
+  margin-left: 2em;
+  width: 245px;
+}
+footer {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  margin-top: 12em;
+  color: #fff;
+}
+/* Hamburger Menu */
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.nav-buttons-mobile {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+/*Mobile CSS Codes*/
+
+@media screen and (max-width: 450px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1em;
+    flex-direction: column;
+  }
+  span{
+    margin-right: 15px;
+  }
+  .nav h1 {
+    padding: 7px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .nav-buttons-mobile {
+  }
+  .cards img {
+    height: 16em;
+    margin-top: 1em;
+  }
+  .designer-card {
+    margin-left: 1em;
+  }
+  .designer-card img {
+    height: 4em;
+    margin-top: -5em;
+  }
+  .description {
+    width: 18em;
+    margin-left: -3em;
+  }
+  .description h2 {
+    font-size: 36px;
+  }
+  .description p {
+    font-size: 14px;
+    margin-top: -2em;
+  }
+  footer {
+    margin-top: 10em;
+  }
+}
