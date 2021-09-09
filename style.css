@@ -6,6 +6,9 @@ html,
 body {
   background: #181719;
 }
+nav span {
+  display: none;
+}
 .nav {
   display: flex;
   align-items: baseline;
@@ -17,7 +20,7 @@ body {
   font-family: Crimson Pro;
   font-style: normal;
   font-weight: 200;
-  line-height: 16px;
+  line-height: 29px;
   text-transform: uppercase;
   color: #ffffff;
   padding: 20px;
@@ -28,7 +31,7 @@ body {
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
-  line-height: 22px;
+  line-height: 40px;
   margin-right: 2em;
 }
 .nav-buttons a {
@@ -75,12 +78,13 @@ body {
   color: #ffffff;
 }
 .cards img {
-  height: 500px;
+  max-height: 500px;
+  max-width: 100%;
 }
 .designer-card {
   display: flex;
   align-items: center;
-  width: 350px;
+  width: 353px;
   height: 190px;
   background-color: #181719;
   position: absolute;
@@ -122,6 +126,10 @@ footer {
   text-align: center;
   margin-top: 12em;
   color: #fff;
+}
+footer a {
+  color: white;
+  text-decoration: none;
 }
 /* Hamburger Menu */
 .overlay {
@@ -167,7 +175,7 @@ footer {
 
 /*Mobile CSS Codes*/
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 767px) {
   html,
   body {
     margin: 0;
@@ -180,7 +188,7 @@ footer {
     margin-top: -1em;
     flex-direction: column;
   }
-  span{
+  span {
     margin-right: 15px;
   }
   .nav h1 {
@@ -194,11 +202,12 @@ footer {
   .nav-buttons-mobile {
   }
   .cards img {
-    height: 16em;
+    height: 14em;
     margin-top: 1em;
   }
   .designer-card {
     margin-left: 1em;
+    width: 300px;
   }
   .designer-card img {
     height: 4em;
@@ -206,7 +215,7 @@ footer {
   }
   .description {
     width: 18em;
-    margin-left: -3em;
+    margin-left: 0em;
   }
   .description h2 {
     font-size: 36px;
@@ -216,6 +225,107 @@ footer {
     margin-top: -2em;
   }
   footer {
-    margin-top: 10em;
+    margin-top: 10em !important;
+    padding-bottom: 1em;
+    width: 228px;
+    margin-left: 5em;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+  .nav span {
+    display: none;
+  }
+  .designer-card {
+    margin-left: 5em;
+    margin-top: -3em;
+    width: 290px;
+  }
+  .nav h1{
+    font-size: 23px;
+    padding: 10px;
+    margin-left: 0;
+  }
+}
+@media screen and (width: 1024px) {
+  .nav span {
+    display: none;
+  }
+  .designer-card {
+    margin-left: 5em;
+    margin-top: -3em;
+    width: 410px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .nav span {
+    display: none;
+  }
+}
+@media screen and (width: 320px) {
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -1em;
+    flex-direction: column;
+  }
+  span {
+    margin-right: 15px;
+  }
+  .nav h1 {
+    padding: 7px;
+    margin-left: 20px;
+    font-size: 14px;
+  }
+  .nav-buttons {
+    display: none;
+  }
+  .nav-buttons-mobile {
+  }
+  .cards img {
+    height: 12em;
+    margin-top: 1em;
+  }
+  .designer-card {
+    margin-left: 1em;
+    width: 250px;
+    height: 130px;
+  }
+  .designer-card img {
+    height: 2.5em;
+    margin-top: -4em;
+    margin-left: 1em;
+  }
+  .designer-sign {
+    margin-top: 3em;
+    margin-left: 1em;
+    width: 145px;
+    font-size: 15px;
+  }
+  .designer-desc {
+    margin-top: -4em;
+  }
+
+  .description {
+    width: 16em;
+    margin-left: 0em;
+  }
+  .description h2 {
+    font-size: 36px;
+  }
+  .description p {
+    font-size: 14px;
+    margin-top: -2em;
+  }
+  footer {
+    margin-top: 5em !important;
+    padding-bottom: 1em;
   }
 }
